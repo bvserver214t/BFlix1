@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TV en Vivo - PS3MFree</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+      overflow: hidden;
+    }
+    #player {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+</head>
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({
+      source: "https://bit.ly/PS3MFree",
+      parentId: "#player",
+      autoPlay: true,
+      height: "100%",
+      width: "100%",
+      mimeType: "application/x-mpegURL"
+    });
+  </script>
+</body>
+</html>
